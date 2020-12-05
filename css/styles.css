@@ -31,9 +31,7 @@ h3 {
 p {
   margin: 10px 0;
 }
-img {
-  width: 100%;
-}
+
 .top {
   background-color: var(--intro-email);
   background-image: url(/images/bg-curvy-desktop.svg);
@@ -56,15 +54,18 @@ a {
 .container {
   margin: 0 auto;
   padding: 0 40px;
-  max-width: 1440px;
+  max-width: 1100px;
 }
 .btn {
-  padding: 15px 100px;
+  padding: 10px 70px;
   border-radius: 50px;
   margin: 10px 0;
   font-family: "Raleway", sans-serif;
   cursor: pointer;
   display: inline-block;
+}
+.btn:hover {
+  font-size: 20px;
 }
 .card {
   background-color: var(--testimonial-background);
@@ -72,7 +73,7 @@ a {
   margin: 10px;
   box-shadow: 5px 5px 10px #0b1523;
   position: relative;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 .flex {
   display: flex;
@@ -93,6 +94,7 @@ a {
 .navbar {
   justify-content: space-between;
   height: 120px;
+  max-width: 1100px;
 }
 header .navbar {
   font-family: "Raleway", sans-serif;
@@ -108,15 +110,16 @@ nav ul li {
 /* intro */
 
 .intro {
-  max-width: 90%;
+  max-width: 500px;
   margin: auto;
   text-align: center;
   max-width: 90%;
 }
 
 .intro img {
-  max-width: 50%;
-  margin: 5px 0 30px;
+  max-width: 500px;
+  margin: 25px 0 30px;
+  width: 100%;
 }
 
 .intro h1 {
@@ -137,7 +140,7 @@ nav ul li {
 
 /* grid */
 .features {
-  margin-top: 150px;
+  margin-top: 120px;
 }
 .features .grid {
   max-width: 800px;
@@ -146,12 +149,11 @@ nav ul li {
   text-align: center;
 }
 .features h2 {
-  font-size: 30px;
+  font-size: 25px;
   margin: 20px 0;
 }
 .features img {
-  width: 100px;
-  height: 90px;
+  height: 78px;
 }
 .feature-item {
   max-width: 380px;
@@ -162,29 +164,30 @@ nav ul li {
 /* productive */
 
 .productive {
-  margin-top: 70px;
-  justify-content: center;
+  margin-top: 100px;
   justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  width: 90%;
+  max-width: 900px;
 }
 .productive-left {
-  flex-basis: 50%;
+  flex-basis: 500px;
+}
+.productive-left img {
+  width: 100%;
 }
 .productive-right {
-  flex-basis: 50%;
+  flex-basis: 500px;
   text-align: left;
 }
 .productive-textarea {
   margin-left: 50px;
 }
 .productive-textarea h2 {
-  font-size: 25px;
+  font-size: 29px;
   margin: 25px 0;
+  line-height: 1.4;
 }
 .productive-textarea p {
-  font-size: 10px;
+  font-size: 12px;
 }
 .form {
   margin-left: 50px;
@@ -195,10 +198,10 @@ nav ul li {
   display: inline-block;
   background: var(--main-background);
   position: relative;
-  margin-top: 20px;
+  margin-top: 5px;
   padding: 5px 0;
-  width: 50%;
-  max-width: 90%;
+  width: 36%;
+  max-width: 50%;
 }
 
 .form input {
@@ -217,11 +220,10 @@ nav ul li {
 .form img {
   display: inline-block;
   position: absolute;
-  margin-top: 20px;
-  right: 27%;
+  margin-top: 5px;
+  right: 31%;
   width: 15px;
-  max-width: 80%;
-  align-items: center;
+  max-width: 50%;
   padding-top: 2px;
   cursor: pointer;
 }
@@ -229,7 +231,7 @@ nav ul li {
 /* review */
 
 .quote {
-  margin: 0 0 -10px 10px;
+  margin: 0 0 -15px 40px;
 }
 .quote img {
   margin-top: 100px;
@@ -237,10 +239,12 @@ nav ul li {
 }
 .review {
   display: flex;
+  max-width: 800px;
   margin: auto;
   justify-content: space-between;
   text-align: left;
 }
+
 .patel,
 .bruce,
 .iva {
@@ -250,35 +254,32 @@ nav ul li {
   justify-content: flex-start;
   margin: auto;
 }
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
 .review img {
   border-radius: 50%;
-  width: 40px;
-  margin-top: 10px;
-  margin-right: 10px;
-  margin-left: -50px;
+  width: 25px;
+  margin-top: 2px;
+  margin-right: 7px;
 }
 .review .card p {
-  max-width: 300px;
-  font-size: 11px;
+  font-size: 10px;
 }
 .review h3 {
-  margin: 10px 10px 0px;
-  font-size: 12px;
+  margin: 2px 0px -7px;
+  font-size: 9px;
+  padding-bottom: 0;
 }
-.flex .name {
-  max-width: 300px;
+.card .name {
+  display: flex;
+  flex-direction: row;
   justify-content: flex-start;
-  align-items: flex-start;
-  margin: auto;
-  padding: 0;
 }
-.you {
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
+
 small {
-  margin-left: 10px;
   opacity: 0.8;
   font-size: 9px;
 }
@@ -286,8 +287,8 @@ small {
 /* newsletter */
 
 .newsletter {
-  width: 70%;
-  margin: 180px auto 100px;
+  width: 600px;
+  margin: 150px auto 100px;
   background-color: var(--intro-email);
   padding: 20px;
   text-align: center;
@@ -298,13 +299,13 @@ small {
   margin: 10px 60px;
 }
 .newsletter-text h2 {
-  font-size: 30px;
+  font-size: 25px;
   margin-bottom: 15px;
   opacity: 0.8;
 }
 .newsletter-text p {
   margin-bottom: 20px;
-  font-size: 12px;
+  font-size: 10px;
   opacity: 0.7;
 }
 .newsletter-form {
@@ -321,8 +322,13 @@ small {
   padding: 10px 30px;
   margin: 0;
   opacity: 0.9;
+  font-size: 12px;
+  border: none;
+}
+.newsletter-form .btn-newsletter:hover {
   font-size: 14px;
 }
+
 .newsletter-form input {
   display: inline-block;
   width: 60%;
@@ -339,12 +345,7 @@ footer {
   justify-content: center;
   overflow: hidden;
 }
-footer .container {
-  margin: 0 0px;
-}
 footer .container .footer-logo {
-  width: 15%;
-  display: block;
   margin: 150px 0 30px;
 }
 .footer-grid.grid {
@@ -359,20 +360,21 @@ footer .container .footer-logo {
   align-items: flex-start;
 }
 .location img {
-  width: 5%;
-  height: 5%;
-  margin: 15px 20px 10px 0;
+  width: 16px;
+  height: 16px;
+  margin: 5px 10px 10px 0;
 }
 
 .location p {
   font-size: 12px;
+  margin-top: 5px;
 }
 .contact {
   margin: 0 20px;
 }
 .contact img {
-  width: 10%;
-  height: 10%;
+  width: 16px;
+  height: 16px;
   margin-right: 20px;
 }
 .phone,
@@ -382,8 +384,13 @@ footer .container .footer-logo {
   align-items: center;
 }
 .phone,
-.mail p {
+.mail a {
   font-size: 10px;
+  margin: 5px 0px 10px 0;
+}
+.phone a:hover,
+.mail a:hover {
+  color: hsl(176, 68%, 64%);
 }
 
 .links {
@@ -391,8 +398,12 @@ footer .container .footer-logo {
   justify-content: flex-start;
   align-items: flex-start;
   margin-top: 5px;
-  margin-left: 20px;
-  width: 100%;
+  margin-left: 0px;
+  gap: 0;
+}
+.links a:hover,
+.socials a i:hover {
+  color: hsl(176, 68%, 64%);
 }
 .links ul li {
   margin-bottom: 15px;
@@ -407,11 +418,10 @@ footer .container .footer-logo {
 }
 .socials a i {
   border: 1px solid #fafafa;
-  padding: 8px;
+  padding: 10px;
   border-radius: 50%;
   margin: 5px 10px 0 0;
   font-size: 16px;
-  border: 1px solid #fff;
 }
 
 /* Media queries */
@@ -419,9 +429,7 @@ footer .container .footer-logo {
   .top {
     background-image: url(/images/bg-curvy-mobile.svg);
   }
-  .intro br {
-    display: none;
-  }
+
   .features .container.grid {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
@@ -489,13 +497,19 @@ footer .container .footer-logo {
   .patel,
   .bruce,
   .iva {
-    width: 80%;
     margin: 20px auto;
   }
   .review .card p {
     font-size: 16px;
-    width: 90%;
+    width: 600px;
     padding: 20px 30px;
+  }
+  .card {
+    padding: 10px;
+    max-width: 600px;
+  }
+  .card .name {
+    margin-left: 30px;
   }
   .newsletter {
     width: 90%;
@@ -537,6 +551,7 @@ footer .container .footer-logo {
     justify-content: flex-start;
     align-items: flex-start;
     z-index: 1;
+    max-width: 100%;
   }
   .footer p {
     font-size: 26px;
@@ -546,17 +561,8 @@ footer .container .footer-logo {
     height: 10%;
     margin: 15px 20px 10px 0;
   }
-  .contact {
-    margin: 0 5px;
-  }
-  .phone,
-  .mail {
-    justify-content: flex-start;
-    align-items: flex-end;
-    margin: 15px 0px 50px 0;
-  }
   .location p {
-    margin: 8px 55px 30px 0;
+    margin: 8px 55px 3px 0;
     line-height: 40px;
   }
   .contact img {
@@ -586,5 +592,92 @@ footer .container .footer-logo {
   }
   .grid.footer-grid {
     margin: 50px 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .btn {
+    padding: 5px 40px;
+    border-radius: 30px;
+    margin: 20px 0;
+  }
+  .navbar {
+    flex-direction: column;
+    padding-top: 20px;
+    margin-top: 20px;
+  }
+  .intro img {
+    width: 80%;
+  }
+  .intro h1 {
+    font-size: 20px;
+  }
+  .intro p {
+    font-size: 12px;
+  }
+  .intro-btn {
+    font-size: 14px;
+  }
+  .features {
+    margin-top: 50px;
+  }
+  .features .grid {
+    max-width: 400px;
+  }
+  .features h2 {
+    font-size: 20px;
+  }
+  .features img {
+    width: 70px;
+    height: 78px;
+  }
+  .features p {
+    font-size: 16px;
+  }
+  .productive-textarea h2 {
+    font-size: 20px;
+    margin: 0 0;
+  }
+  .productive-textarea p {
+    font-size: 12px;
+  }
+  .quote {
+    margin: 0 0 -40px 10px;
+  }
+  .review .card p {
+    font-size: 14px;
+    width: 300px;
+    padding-left: 8px;
+  }
+  .card {
+    max-width: 300px;
+  }
+  .newsletter {
+    width: 300px;
+  }
+  .newsletter-text h2 {
+    font-size: 20px;
+  }
+  .newsletter-text p {
+    font-size: 10px;
+    margin-bottom: 0;
+  }
+  .newsletter-form .btn-newsletter {
+    padding: 10px 20px;
+    font-size: 10px;
+  }
+  .newsletter-form input {
+    padding: 10px 20px;
+  }
+  .location p {
+    font-size: 10px;
+    margin-top: 0;
+    line-height: 1.4;
+  }
+  .location img {
+    margin: 0px 10px 10px 0;
+  }
+  .links ul li {
+    font-size: 14px;
   }
 }
